@@ -1,0 +1,19 @@
+TILE_SIZE = 16
+TILES_WIDE, TILES_HIGH = 16, 16
+ZOOM_FACTOR = 3
+GAME_WIDTH, GAME_HEIGHT = TILE_SIZE * TILES_WIDE * ZOOM_FACTOR, TILE_SIZE * TILES_HIGH * ZOOM_FACTOR
+TIMER_HEIGHT = 25 * ZOOM_FACTOR
+INFO_PANEL_WIDTH = 50 * ZOOM_FACTOR
+SCREEN_WIDTH = GAME_WIDTH + INFO_PANEL_WIDTH
+SCREEN_HEIGHT = GAME_HEIGHT + TIMER_HEIGHT
+
+Z_LAYERS = {
+    'bg': 0,
+    'particles': 1,
+    'deployed_spikeball': 2,
+    'main': 3,
+    'drops': 4,
+    'flying_enemies': 5,
+    'bullets': 6
+}
+
